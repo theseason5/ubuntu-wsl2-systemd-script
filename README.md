@@ -13,7 +13,7 @@ sudo apt install git
 to do so.
 ### Run the script and commands
 ```sh
-git clone https://github.com/DamionGans/ubuntu-wsl2-systemd-script.git
+git clone https://github.com/theseason5/ubuntu-wsl2-systemd-script.git
 cd ubuntu-wsl2-systemd-script/
 bash ubuntu-wsl2-systemd-script.sh
 # Enter your password and wait until the script has finished
@@ -24,5 +24,12 @@ systemctl
 
 ```
 If you don't get an error and see a list of units, the script worked.
+## Configure on Bash
+
+Add this line on top the .bashrc or the .zshrc (zsh/oh-my-zsh):
+```sh
+source /usr/sbin/start-systemd-namespace
+```
+In .bashrc or zshrc (oh-my-zsh)
 
 Have fun using systemd on your Ubuntu WSL2 image. You may use and change and distribute this script in whatever way you'd like. 
